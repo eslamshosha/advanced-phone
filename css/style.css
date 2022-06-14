@@ -1825,6 +1825,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     align-items: center;
     padding: 0;
     font-weight: 700;
+    text-align: start;
   }
   .lang-section {
     display: flex;
@@ -2073,7 +2074,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   opacity: 0;
   visibility: hidden;
   width: max-content;
-  max-width: 160px;
+  min-width: 120px;
   background-color: #fff;
   color: var(--sec-color);
   display: flex;
@@ -2157,6 +2158,7 @@ html[dir="rtl"] .cats-dispaly li {
     padding: 0;
     height: unset;
     justify-content: flex-start;
+    max-width: 100%;
   }
   .cats-dispaly .cat-li a {
     line-height: 34px;
@@ -2206,6 +2208,7 @@ html[dir="rtl"] .cats-dispaly li {
   .top-header .cats-dispaly .cat-li a:hover,
   .cat-li:hover > .cat-anchor {
     color: var(--white-color);
+    text-align: start;
   }
   .cats-dispaly .cat-li:hover a,
   .cat-li:hover > .cat-anchor {
