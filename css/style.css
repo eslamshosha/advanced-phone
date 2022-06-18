@@ -4,15 +4,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  padding-top: 139px;
-}
-html[dir="rtl"] body {
-  padding-top: 145px;
+  padding-top: 156.2px;
 }
 @media (max-width: 991px) {
-  html[dir="rtl"] body,
   body {
-    padding-top: 59px;
+    padding-top: 124px;
   }
 }
 :root {
@@ -246,15 +242,15 @@ nav {
   text-decoration: none;
 }
 .top-header .img-logo img {
-  max-width: 228px;
-  max-height: 66px;
+  max-width: 220px;
+  max-height: 80px;
   image-rendering: -webkit-optimize-contrast;
 }
 .fixed-nav .top-header .img-logo {
   display: none;
 }
 .top-header .logo-sm img {
-  max-width: 75px;
+  max-width: 50px;
   image-rendering: -webkit-optimize-contrast;
 }
 .fixed-logo {
@@ -685,7 +681,7 @@ html[dir="rtl"] .add-to .dropdown-content {
   width: 8px;
   height: 8px;
   background-color: rgb(18, 17, 18);
-  opacity: 0.5;
+  opacity: 0.3;
   margin: 0 3px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -693,13 +689,13 @@ html[dir="rtl"] .add-to .dropdown-content {
   border-radius: 50%;
 }
 .category-section .swiper-pagination .swiper-pagination-bullet:hover {
-  background-color: var(--main-color);
+  background-color: var(--main-hover);
 }
 
 .category-section
   .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--main-color);
+  background-color: var(--main-hover);
   opacity: 1;
 }
 @media (max-width: 991px) {
@@ -978,7 +974,7 @@ html[dir="ltr"] .slider-background {
   width: 8px;
   height: 8px;
   background-color: rgb(18, 17, 18);
-  opacity: 0.5;
+  opacity: 0.3;
   margin: 0 3px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1005,7 +1001,7 @@ html[dir="ltr"] .slider-background {
     flex-direction: column-reverse;
   }
   .product-section .product-head {
-    font-size: 20px;
+    font-size: 18px;
   }
   .product .product-name {
     font-size: 13px;
@@ -1015,6 +1011,11 @@ html[dir="ltr"] .slider-background {
   }
   .product-content .price-box .last-price {
     margin-inline-end: 0;
+  }
+  .product-hover .hint {
+    font-size: 10px;
+    height: 20px;
+    width: 55px;
   }
 }
 /*                             product section                          */
@@ -1291,6 +1292,12 @@ html[dir="rtl"] .reviews-slider .reviews-cont::before {
 @media (max-width: 767px) {
   .reviews-section {
     margin-top: 60px;
+  }
+  .reviews-section .reviews-head{
+    font-size: 18px;
+  }
+  .reviews-cont .reviews-title{
+    font-size: 14px;
   }
 }
 /*                         reviews-section               */
@@ -1690,13 +1697,17 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .fixed-nav .search-input {
     height: 40px;
-    padding-inline-start: 35px;
+    padding: 0 25px;
   }
   .top-header .header-icons {
     width: unset;
   }
-  .header-icons .fixed-search {
+  /* .header-icons .fixed-search {
     display: flex;
+  } */
+  .fixed-nav .search-section{
+    left: 10%;
+    transform: none;
   }
   .search-input:focus {
     border: 2px solid var(--btn-color);
@@ -1913,7 +1924,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     order: unset;
     margin: 0;
   }
-  .search-section {
+  /* .search-section {
     position: absolute;
     top: -100%;
     left: 50%;
@@ -1921,10 +1932,10 @@ html[dir="rtl"] .footer-accordion.active:after {
     width: 80%;
     z-index: 99;
     transition: all 0.3s ease-in-out;
-  }
-  .search-open {
+  } */
+  /* .search-open {
     top: 100px;
-  }
+  } */
   .lang-section .dropdown-content::before {
     display: none;
   }
@@ -1937,7 +1948,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     justify-content: center;
   }
   .features-box .features-h {
-    font-size: 15px;
+    font-size: 14px;
   }
   .features-box .features-span {
     font-size: 13px;
@@ -1977,7 +1988,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     margin-top: 40px;
   }
   .pay-footer {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
   .cr-img img {
     image-rendering: -webkit-optimize-contrast;
@@ -2011,11 +2022,10 @@ html[dir="rtl"] .footer-accordion.active:after {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--main-hover);
+  background-color: #0000004a;
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 11%);
   transition: all 0.3s ease-in-out;
 }
 .arrow-top i:hover {
@@ -2075,6 +2085,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   visibility: hidden;
   width: max-content;
   min-width: 120px;
+  max-width: 200px;
   background-color: #fff;
   color: var(--sec-color);
   display: flex;
